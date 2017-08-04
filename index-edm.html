@@ -23,7 +23,7 @@ var spec = {
 "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/miroslavlison/Misc/master/data/ICM%20Data.csv",
+      "url": "https://raw.githubusercontent.com/miroslavlison/Misc/master/Incident%20Severity%20Breakdown.csv",
     //   "values": [
     //     {"category": "A", "amount": 28},
     //     {"category": "B", "amount": 55},
@@ -53,14 +53,14 @@ var spec = {
     {
       "name": "xscale",
       "type": "band",
-      "domain": {"data": "table", "field": "ImpactStartDate"},
+      "domain": {"data": "table", "field": "Create Date"},
       "range": "width",
       "padding": 0.05,
       "round": true
     },
     {
       "name": "yscale",
-      "domain": {"data": "table", "field": "Severity"},
+      "domain": {"data": "table", "field": "Severity 1"},
       "nice": true,
       "range": "height"
     }
